@@ -7,21 +7,21 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center_vertical"
-    android:background="@color/white"
+    android:background="@drawable/infocarroadmin"
     tools:context=".MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_marginTop="400dp"
+        android:layout_marginTop="550dp"
         android:gravity="center_horizontal"
         android:padding="20dp">
 
         <Button
             android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:text="Upload"
+            android:layout_height="70dp"
+            android:text="Registrar"
             android:id="@+id/mainUpload"
             android:textSize="18sp"
             android:backgroundTint="@color/green"
@@ -37,7 +37,7 @@
             <com.google.android.material.button.MaterialButton
                 android:layout_width="0dp"
                 android:layout_height="70dp"
-                android:text="Update"
+                android:text="Actualizar"
                 android:id="@+id/mainUpdate"
                 android:textSize="18sp"
                 android:padding="16sp"
@@ -52,7 +52,7 @@
             <com.google.android.material.button.MaterialButton
                 android:layout_width="0dp"
                 android:layout_height="70dp"
-                android:text="Delete"
+                android:text="Borrar"
                 android:id="@+id/mainDelete"
                 android:textSize="18sp"
                 android:padding="16sp"

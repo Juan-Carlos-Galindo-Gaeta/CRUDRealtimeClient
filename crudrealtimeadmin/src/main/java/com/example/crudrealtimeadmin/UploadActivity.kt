@@ -33,12 +33,12 @@ class UploadActivity : AppCompatActivity() {
                 binding.uploadVehicleRTO.text.clear()
                 binding.uploadVehicleNumber.text.clear()
 
-                Toast.makeText(this,"Saved",Toast.LENGTH_SHORT).show()
+                Toast.makeText(this,"Informacion guardada",Toast.LENGTH_SHORT).show()
                 val intent = Intent(this@UploadActivity,MainActivity::class.java)
                 startActivity(intent)
                 finish()
             }.addOnFailureListener{
-                Toast.makeText(this,"Failed",Toast.LENGTH_SHORT).show()
+                Toast.makeText(this,"Algo fallo",Toast.LENGTH_SHORT).show()
             }
         }
 

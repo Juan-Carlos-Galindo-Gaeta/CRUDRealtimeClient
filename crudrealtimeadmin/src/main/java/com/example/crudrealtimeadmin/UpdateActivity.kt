@@ -37,9 +37,9 @@ class UpdateActivity : AppCompatActivity() {
             binding.updateOwnerName.text.clear()
             binding.updateVehicleBrand.text.clear()
             binding.updateVehicleRTO.text.clear()
-            Toast.makeText(this,"Updated",Toast.LENGTH_SHORT).show()
+            Toast.makeText(this,"Informacion actualizada",Toast.LENGTH_SHORT).show()
         }.addOnFailureListener {
-            Toast.makeText(this,"Unable to update",Toast.LENGTH_SHORT).show()
+            Toast.makeText(this,"No se pudo actualizar",Toast.LENGTH_SHORT).show()
         }
     }
 

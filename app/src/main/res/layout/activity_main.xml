@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="@drawable/infocarro"
     tools:context=".MainActivity">
 
     <EditText
@@ -17,7 +17,7 @@
         android:layout_marginStart="20dp"
         android:padding="12dp"
         android:background="@drawable/green_border"
-        android:hint="Enter vehicle number"
+        android:hint="Ingresa numero de serie"
         android:textSize="20sp"
         android:textColor="@color/green"
         app:layout_constraintStart_toStartOf="parent"
@@ -28,7 +28,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/searchButton"
-        android:text="Search"
+        android:text="Buscar"
         android:textColor="@color/white"
         android:textSize="18sp"
         android:padding="12dp"
@@ -70,7 +70,7 @@
                     android:layout_height="wrap_content"
                     android:id="@+id/ownerName"
                     android:layout_weight="1"
-                    android:text="Owner Name"
+                    android:text="Nombre del dueño"
                     android:textStyle="bold"
                     android:textColor="@color/green"
                     android:textSize="18sp"/>
@@ -106,7 +106,7 @@
                     android:layout_height="wrap_content"
                     android:id="@+id/vehicleBrand"
                     android:layout_weight="1"
-                    android:text="Vehicle Brand"
+                    android:text="Marca del carro"
                     android:textStyle="bold"
                     android:textColor="@color/green"
                     android:textSize="18sp"/>
@@ -142,7 +142,7 @@
                     android:layout_height="wrap_content"
                     android:id="@+id/vehicleRTO"
                     android:layout_weight="1"
-                    android:text="Vehicle RTO:"
+                    android:text="Matricula de la placa"
                     android:textStyle="bold"
                     android:textColor="@color/green"
                     android:textSize="18sp"/>

@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
             if(searchVehicleNumber.isNotEmpty()){
                 readData(searchVehicleNumber)
             }else{
-                Toast.makeText(this, "Please enter the vehicle number", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Por favor ingresa el numero de serie", Toast.LENGTH_SHORT).show()
             }
         }
 
@@ -41,10 +41,10 @@ class MainActivity : AppCompatActivity() {
                 binding.readVehicleBrand.text = vehicleBrand.toString()
                 binding.readVehicleRTO.text = vehicleRTO.toString()
             } else {
-                Toast.makeText(this,"Vehicle number does not exist",Toast.LENGTH_SHORT).show()
+                Toast.makeText(this,"Ese numero de serie no existe",Toast.LENGTH_SHORT).show()
             }
         }.addOnFailureListener {
-            Toast.makeText(this,"Something went wrong",Toast.LENGTH_SHORT).show()
+            Toast.makeText(this,"Algo paso mal",Toast.LENGTH_SHORT).show()
         }
     }
 

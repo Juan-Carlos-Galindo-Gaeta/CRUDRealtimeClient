@@ -22,7 +22,7 @@ class DeleteActivity : AppCompatActivity() {
             if(vehicleNumber.isNotEmpty()){
                 deleteData(vehicleNumber)
             } else {
-                Toast.makeText(this,"Please enter vehicle number",Toast.LENGTH_SHORT).show()
+                Toast.makeText(this,"Por favor ingresa el numero de serie",Toast.LENGTH_SHORT).show()
             }
         }
 
@@ -32,9 +32,9 @@ class DeleteActivity : AppCompatActivity() {
         databaseReference = FirebaseDatabase.getInstance().getReference("Vehicle Information")
         databaseReference.child(vehicleNumber).removeValue().addOnSuccessListener {
             binding.deleteVehicleNumber.text.clear()
-            Toast.makeText(this,"Deleted",Toast.LENGTH_SHORT).show()
+            Toast.makeText(this,"Borrado",Toast.LENGTH_SHORT).show()
         }.addOnFailureListener {
-            Toast.makeText(this,"Unable to Delete",Toast.LENGTH_SHORT).show()
+            Toast.makeText(this,"No se puede borrar",Toast.LENGTH_SHORT).show()
         }
     }
 
